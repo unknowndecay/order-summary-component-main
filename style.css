@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, button, a, span, h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: #E0E8FF url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 20px;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(56 41 224 / 0.1);
+}
+
+.card-img {
+    background-image: url("images/illustration-hero.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 170px;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.card-description {
+    width: 80%;
+    margin: 0 auto;
+}
+.card-description p {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-price p {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+.card-price span {
+    color: hsl(224, 23%, 55%);
+    font-weight: normal;
+}
+
+.card-price a {
+    font-size: .8rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+.card-price a:hover {
+    text-decoration: none;
+    color: hsl(245, 83%, 68%);
+}
+
+.btn {
+    width: 85%;
+    margin: 0 auto;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(56 41 224 / 0.1);
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+
+.cancel {
+    padding-bottom: 1.5rem;
+}
+
+.cancel p {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel p:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        background: #E0E8FF url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+    .card {
+        width: 350px;
+    }
+}
